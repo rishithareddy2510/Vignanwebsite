@@ -1,0 +1,132 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.outbox{
+    border: solid 1px;
+    height: 120px;
+    display: flex;
+}
+#box1,#box2{
+    border: solid 1px;
+    height: 120px;
+}
+#box1{
+    width: 350px;
+}
+#box2{
+    width: 1100px;
+    background-color: #581397;
+    text-align: center;
+}
+#clgname{
+    color: white;
+    font-size: 52px;
+}
+#text1{
+    font-size: 22px;
+    color: white;
+    text-align: center;
+}
+#scrolltext{
+    font-size: 35px;
+    font-weight: bold;
+    font-style: italic;
+    color: rgb(238, 76, 130);
+}
+.navigation{
+    height: 55px;
+}
+ul li{
+    font-weight: bold;
+    height: 55px;
+    float: left;
+    width: 122px;
+    text-align: center;
+    line-height: 55px;
+    background-color: lavender;
+    position: relative;
+    margin-bottom: 1px;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color: rgb(245, 4, 4);
+    font-size: 18px;
+    text-decoration: none;
+}
+ul ul{
+    position: absolute;
+    display: none;
+}
+ul li:hover>ul{
+    display: block;
+}
+ul li ul li{
+    width: 250px;
+    background-color: antiquewhite;
+}
+ul li ul li ul li{
+    width: 350px;
+    background-color: antiquewhite;
+    margin-left: 255px;
+}
+ul ul ul{
+    top: 0px;
+}
+ul li:hover{
+    background-color: rgb(58, 250, 231);
+}
+ul li ul li:hover{
+    background-color: plum;
+}
+.arrow{
+    color: darkred;
+}
+.obox{
+    height: 400px;
+    display: flex;justify-content: space-between;
+}
+#in1,#in2,#in3{
+    border: solid 1px;
+    height: 400px;
+}
+#in1{
+    width: 700px;
+    background-image: url(img1.jpeg);
+    background-repeat: no-repeat;
+    background-size: 700px;
+    height: 400px;
+    animation-name: imageschanging;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imageschanging{
+    10%{
+        background-image: url(img1.jpeg);
+    }
+    20%{
+        background-image: url(img2.jpeg);
+    }
+    30%{
+        background-image: url(img3.jpeg);
+    }
+    40%{
+        background-image: url(img4.jpeg);
+    }
+    50%{
+        background-image: url(img6.jpeg);
+    }
+    }
+#in2,#in3{
+    width:300px ;
+}
+.out{
+    border: solid 1px;
+    height: 150px;
+    background-color: black ;
+}
+#logo{
+    padding-right: 145px;
+}
